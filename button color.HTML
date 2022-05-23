@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      input.white{
+        background-color: yellow;
+      }
+      input.black{
+        background-color: black;
+        color : white;
+      }
+    </style>
+</head>
+
+  <body>
+    <div>
+      <input type="button" value = 'white' id = 'ww' class="white">
+    </div>
+    <script>
+     const $ww = document.getElementById('ww');
+     $ww.addEventListener('click',function(){
+       if($ww.value==='white'){
+         $ww.value = 'black';
+         document.getElementById('ww').className = 'black';
+       }else{
+         $ww.value = 'white';
+         document.getElementById('ww').className = 'white';
+       }
+     })
+    </script>
+
+  </body>
+    <!-- <body id = 'target' class = 'white'>
+        <div id = 'control'>
+             <input type = 'button' value = 'white' id='white_btn'/>
+             <input type = 'button' value = 'black' id='black_btn'/>
+             <input type = 'button' value = 'border' id='border_btn'/>
+        </div>
+
+        <script>
+            wbtn = document.getElementById("white_btn");
+            wbtn.addEventListener("click", function() {
+              document.getElementById("target").className = "white";
+            });
+
+            bbtn = document.getElementById("black_btn");
+            bbtn.addEventListener("click", function() {
+              document.getElementById("target").className = "black";
+            });
+
+            borderbtn = document.getElementById("border_btn");
+            borderbtn.addEventListener("click", function() {
+              document.getElementById("target").classList.add("border");
+            });
+
+        </script> -->
+   </body>
+    
+</body>
+</html>
